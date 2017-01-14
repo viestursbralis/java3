@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="viesturs" context="main">
+        <insert tableName="category">
+            <column name="category_short_name" value="TYPE_1"/>
+
+            <column name="category_description" value="TYPE A for A type things"/>
+        </insert>
+        <insert tableName="category">
+            <column name="category_short_name" value="TYPE_2"/>
+
+            <column name="category_description" value="TYPE 1 for 1 type things"/>
+        </insert>
+
+
+    </changeSet>
+
+
+
+</databaseChangeLog>
