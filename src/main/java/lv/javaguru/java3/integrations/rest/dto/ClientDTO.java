@@ -44,4 +44,18 @@ public class ClientDTO implements Serializable {
     public void setIssues(List<JiraIssue> jiraIssues) {
         this.issues = jiraIssues;
     }
+
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "login = " + login + '\'' +
+                ", password = " + password +
+                ", id = " + client_id +
+                ", issues = " + issues +
+                '}';
+    }
+
+
+
 }

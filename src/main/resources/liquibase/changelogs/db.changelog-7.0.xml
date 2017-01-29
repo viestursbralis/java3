@@ -9,13 +9,11 @@
     <changeSet id="1" author="viesturs" context="main">
         <insert tableName="category">
             <column name="category_short_name" value="TYPE_1"/>
-
             <column name="category_description" value="TYPE A for A type things"/>
         </insert>
         <insert tableName="category">
             <column name="category_short_name" value="TYPE_2"/>
-
-            <column name="category_description" value="TYPE 1 for 1 type things"/>
+            <column name="category_description" value="TYPE 2 for 2 type things"/>
         </insert>
 
 

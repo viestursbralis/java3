@@ -9,6 +9,9 @@ import java.util.List;
 @Table(name="clients")
 public class Client {
 
+
+    public Client(){}
+
     @Id
     @GeneratedValue(generator = "clients_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "clients_seq", sequenceName = "clients_seq", allocationSize = 1)
@@ -67,5 +70,19 @@ public class Client {
     public void setIssues(List<JiraIssue> is){
         this.issues = is;
     }
+
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "login = " + login + '\'' +
+                ", password = " + password +
+                ", id = " + client_id +
+                ", issues = " + issues +
+                '}';
+    }
+
+
+
 
 }
